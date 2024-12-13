@@ -9,8 +9,6 @@ Welcome to **Profile Map Explorer**! This is a web application built with React 
 - [File Structure](#file-structure)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features 🌟
 The **Profile Map Explorer** application provides the following key features:
@@ -18,18 +16,16 @@ The **Profile Map Explorer** application provides the following key features:
 1. **Profile Display**: A webpage showing a list of profiles with essential information such as name, photo, and description.
 2. **Interactive Map**: Users can view the geographical locations of each profile on an interactive map with dynamic markers.
 3. **Summary Integration**: A "Summary" button next to each profile that displays a map marker on the map for the selected profile’s address.
-4. **Map Services Integration**: Google Maps or Mapbox integration to show locations and handle geocoding for addresses.
-5. **Admin Panel**: Allows administrators to manage profiles (add, edit, delete) through a dashboard.
-6. **Search and Filter**: Search and filter profiles by name, location, or other attributes.
-7. **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
-8. **Error Handling**: Proper error handling for failed requests or invalid data (e.g., missing addresses).
-9. **Loading Indicators**: Informative loading indicators during data fetching and map rendering.
-10. **Profile Details**: A dedicated profile details page to view more information about each person, such as interests, contact info, and more.
+4. **Admin Panel**: Allows administrators to manage profiles (add, edit, delete) through a dashboard.
+5. **Search and Filter**: Search and filter profiles by name, location, or other attributes.
+6. **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
+7. **Error Handling**: Proper error handling for failed requests or invalid data (e.g., missing addresses).
+8. **Loading Indicators**: Informative loading indicators during data fetching and map rendering.
+9. **Profile Details**: A dedicated profile details page to view more information about each person, such as interests, contact info, and more.
 
 ## Tech Stack 🚀
 - **Frontend**: React.js
 - **Styling**: Tailwind CSS
-- **Map Integration**: Google Maps API or Mapbox
 - **State Management**: React Context API
 - **Routing**: React Router
 
@@ -75,30 +71,30 @@ profile-map-explorer/
 │ │ └── AdminPage.jsx        
 │ │
 │ ├── services/
-│ │ ├── profileService.js    # Service for fetching profile data
-│ │ └── mapService.js       # Service for geocoding and map interactions
+│ │ ├── profileService.js    
+│ │ └── mapService.js       
 │ │
 │ ├── context/
-│ │ ├── ProfileContext.jsx   # Context for managing profile data
-│ │ └── AuthContext.jsx      # Context for user authentication (if applicable)
+│ │ ├── ProfileContext.jsx   
+│ │ └── AuthContext.jsx      
 │ │
-│ ├── hooks/
-│ │ ├── useProfiles.js       # Custom hook for managing profile data
-│ │ └── useGeocoding.js      # Custom hook for geocoding addresses
+│ ├── hooks
+│ │ ├── useProfiles.js      
+│ │ └── useGeocoding.js      
 │ │
 │ ├── utils/
-│ │ ├── validation.js        # Validation utilities
-│ │ └── helpers.js           # Helper functions
+│ │ ├── validation.js       
+│ │ └── helpers.js           
 │ │
 │ ├── styles/
-│ │ └── tailwind.css         # Tailwind CSS configuration and styles
+│ │ └── tailwind.css         
 │ │
-│ ├── App.jsx                # Root React component
-│ └── index.js               # Entry point for React app
+│ ├── App.jsx                
+│ └── index.js              
 │
-├── package.json             # Project dependencies and scripts
-├── tailwind.config.js       # Tailwind CSS configuration
-└── README.md                # This README file
+├── package.json             
+├── tailwind.config.js      
+└── README.md          
 ```
 
 ## Installation 🛠️
@@ -140,6 +136,3 @@ Follow these steps to set up the project locally:
 
 
 We hope you enjoy using **Profile Map Explorer**! If you have any questions or need further assistance, feel free to open an issue or reach out. 😄
-```
-
-This README provides an in-depth guide to the project, outlining all major features, setup instructions, and offering a clear explanation of the project’s structure. You can adjust the sections as needed, especially for licensing or contributing guidelines based on your preferences.
